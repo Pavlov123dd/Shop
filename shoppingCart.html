@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__container">
+          <a href="index.html">
+            <img src="images/logo.png" alt="logo" height="45" />
+          </a>
+          <div class="header__info">
+            Hi,
+            <a href="login.html" class="header__user" id="headerUser">Log in</a>
+            <div class="header__shop">
+              <a href="shoppingCart.html" id="headerShoppingCart">
+                <img
+                  src="images/shopping-cart.png"
+                  alt="shopping cart"
+                  height="20"
+                />
+                <span class="header__shop--count" id="headerShoppingCartCount"></span>
+              </a>
+            </div>
+            <button class="header__logout" id="headerLogout">Log out</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="shoppingCart__container">
+        <div class="table__container">
+          <table class="order__table" id="shoppingCartTable">
+            <caption>
+              Items in Shopping Cart
+            </caption>
+            <thead>
+              <tr>
+                <th>Item Description</th>
+                <th>Price</th>
+                <th>Sale</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <!--<tbody>
+              <tr>
+                <td>
+                  <div class="item__info">
+                    <img
+                      src="images/products/boat.png"
+                      alt="Boat"
+                      height="100"
+                    />
+                    <div>
+                      <p class="item__info&#45;&#45;title">Boat</p>
+                    </div>
+                  </div>
+                </td>
+                <td>$700</td>
+                <td>-</td>
+                <td><input type="number" value="2" /></td>
+                <td>$2100</td>
+                <td>
+                  <button class="item__remove">
+                    <img src="images/delete.png" alt="delete" height="20" />
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="item__info">
+                    <img
+                      src="images/products/speed-boat.png"
+                      alt="Speed Boat"
+                      height="100"
+                    />
+                    <div>
+                      <p class="item__info&#45;&#45;title">Speed Boat</p>
+                    </div>
+                  </div>
+                </td>
+                <td>$2000</td>
+                <td><span class="item__sale">- 34%</span></td>
+                <td><input type="number" value="3" /></td>
+                <td>$3996</td>
+                <td>
+                  <button class="item__remove">
+                    <img src="images/delete.png" alt="delete" height="20" />
+                  </button>
+                </td>
+              </tr>
+            </tbody>-->
+          </table>
+        </div>
+
+        <div class="order__summary">
+          <form id="orderSummary">
+            <table>
+              <caption>
+                My Order Summary
+              </caption>
+              <tbody>
+                <tr>
+                  <th>Order Total</th>
+                  <td id="orderSummaryTotal"></td>
+                </tr>
+              </tbody>
+            </table>
+            <button class="btn">Complete Order</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__container">
+          <a href="index.html">
+            <img src="images/logo.png" alt="logo" height="45" />
+          </a>
+          <div class="header__info">
+            Hi,
+            <a href="login.html" class="header__user" id="headerUser">Log in</a>
+            <div class="header__shop">
+              <a href="shoppingCart.html" id="headerShoppingCart">
+                <img
+                  src="images/shopping-cart.png"
+                  alt="shopping cart"
+                  height="20"
+                />
+                <span class="header__shop--count" id="headerShoppingCartCount"
+                  >0</span
+                >
+              </a>
+            </div>
+            <button class="header__logout" id="headerLogout">Log out</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="shoppingCart__container">
+        <div class="table__container">
+          <table class="order__table" id="orderTable">
+            <caption>
+              Ordered Items
+            </caption>
+            <thead>
+              <tr>
+                <th>Item Description</th>
+                <th>Price</th>
+                <th>Sale</th>
+                <th>Quantity</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+
+          </table>
+        </div>
+
+        <div class="order__summary">
+          <table>
+            <caption>
+              My Info
+            </caption>
+            <tbody>
+              <tr>
+                <th>Name:</th>
+                <td id="userInfoName"></td>
+              </tr>
+              <tr>
+                <th>Email:</th>
+                <td id="userInfoEmail"></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="order__summary--btns">
+            <button class="btn delete__acc" type="button" id="deleteAcc">
+              Delete account
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
